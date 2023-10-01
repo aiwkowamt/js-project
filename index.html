@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = 'cookiesContainer'>
+        <span id = 'spanWithQuestion'>Как вас зовут?</span>
+        <input id='inputWithName' placeholder="Введите ваше имя">
+        <span onclick='saveToCookie()' id = 'saveToCookieButton'>Сохранить</span>
+        <div id='greetings'></div>
+    </div>
+
+    <div class = 'container'>
+        <header class = "header">
+            <a href='index.html' class = 'headerLogo'>Movies</a>
+            <a href='#' class = 'headerFavouriteMovies' onclick = 'showModalWindow()'>Избранные фильмы</a>
+            <a href='#' class = 'headerWatchLater'>Смотреть позже</a>
+            <form class = 'headerForm'>
+                <input type = 'text' class = 'headerSearch' placeholder='Поиск' >
+            </form>
+        </header>
+
+        <div class = 'modalWindow'>
+            <div class='modalWindowContainer'>
+                <div class ='closeModalWindow' onclick = 'closeModalWindow()'>Закрыть</div>
+                <div class = 'modelWindowInfo'>Фильмы в избранном: </div>
+                <div class ='modalContent'></div>
+            </div>
+        </div>
+
+        <div class ='movies'></div>
+    </div>
+<script src = 'js/script.js'></script>
+</body>
+</html>
